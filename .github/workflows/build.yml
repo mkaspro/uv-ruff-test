@@ -22,12 +22,12 @@ jobs:
 
       - name: Format
         # For example, using `pytest`
-        run: uv run ruff format
+        run: uvx ruff format
 
       - name: Lint
         # For example, using `pytest`
-        run: uv run ruff check
+        run: uvx ruff check
 
       - name: Run tests
         # For example, using `pytest`
-        run: uv run pytest tests
+        run: uvx pytest tests
