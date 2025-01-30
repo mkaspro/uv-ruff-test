@@ -24,6 +24,10 @@ jobs:
         # For example, using `pytest`
         run: uvx ruff format
 
+      - name: Validate types
+        # For example, using `pytest`
+        run: uvx ruff mypy .
+
       - name: Lint
         # For example, using `pytest`
         run: uvx ruff check
