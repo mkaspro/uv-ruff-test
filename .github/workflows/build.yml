@@ -17,6 +17,14 @@ jobs:
       - name: Install the project
         run: uv sync --all-extras --dev
 
+      - name: Format
+        # For example, using `pytest`
+        run: uv run ruff format
+
+      - name: Lint
+        # For example, using `pytest`
+        run: uv run ruff check
+
       - name: Run tests
         # For example, using `pytest`
         run: uv run pytest tests
