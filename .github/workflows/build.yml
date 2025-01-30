@@ -30,4 +30,4 @@ jobs:
 
       - name: Run tests
         # For example, using `pytest`
-        run: uvx pytest tests
+        run: uvx pytest .
